@@ -22,7 +22,7 @@ const Bag= () =>{
         <View style={styles.typeBtn}>
           <Text style={styles.titleBtn}>YOUR ITEMS</Text>
         </View>
-        <ScrollView style={{backgroundColor:"#fff",width:"100%",height:height - 100 -70-50}}>
+        <ScrollView style={{backgroundColor:"#fff",width:"100%",height:height - 70 -70-50}}>
           <View></View>
         </ScrollView>
         <View style={styles.total}>

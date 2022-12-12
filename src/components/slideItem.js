@@ -20,7 +20,7 @@ width
 const SlideItem= (props) =>{
   return (
     <Pressable style={styles.container}>
-      <View style={{height:height - 70 - 100}}>
+      <View style={{height:height - 70 - 70}}>
         <Image style={styles.img} source={props.source} />
       </View>
       <TouchableOpacity style={styles.btn}>

@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "react-native-vector-icons/Ionicons";
+import { useNavigation } from "@react-navigation/native";
 import {
   SafeAreaView,
   View,
@@ -7,7 +8,7 @@ import {
   Text,
   TextInput,
   FlatList,
-  Dimensions,
+  Dimensions, 
   StyleSheet,
   Image,
   Pressable,
@@ -17,7 +18,7 @@ import {
 import Map from "../components/maps";
 import MapView from "react-native-maps";
 const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height
+const height = Dimensions.get('window').height;
 const Stores = () => {
   return (
     <ScrollView style={styles.container}>
@@ -33,8 +34,7 @@ const Stores = () => {
           </View>
           
         </View>
-        {/* <View style={styles.item}><Image style={styles.img} source={require('../assets/images/lvst.webp')} /></View>
-        <View style={styles.item}><Text>sadasd</Text></View> */}
+
 
       </View>
 
@@ -43,7 +43,7 @@ const Stores = () => {
 
   )
 }
-export default Stores;
+export default Stores;  
 
 const styles = StyleSheet.create({
   container: {
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   },
   map: {
     width: width,
-    height: (height - 70 - 100) / 2,
+    height: (height - 70 - 70) / 2,
     borderBottomWidth: 0.7,
   },
   content: {
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   },
   item: {
     width: width / 2,
-    height: (height - 70 - 100) / 2,
+    height: (height - 70 - 70) / 2,
     // display: flex,
     alignItems: 'center',
     justifyContent: "flex-start",
